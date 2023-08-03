@@ -58,7 +58,7 @@ class HrRemoteMediator(
             val apiResponse = service.searchWorkers(page)
 
             val repos = apiResponse.results
-            val endOfPaginationReached = repos.isEmpty() || page >= 2
+            val endOfPaginationReached = repos.isEmpty()
             repoDatabase.withTransaction {
                 // clear all tables in the database
                 if (loadType == LoadType.REFRESH) {
