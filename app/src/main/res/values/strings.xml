@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Oompa Loompa\'s HR</string>
+    <string name="retry">Reintentar\n</string>
+    <string name="loading">Cargando</string>
+    <string name="search_hint">search...</string>
+    <string name="no_results">no hay resultados\n</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/workerListFragment">
+    <fragment
+        android:id="@+id/workerListFragment"
+        android:name="com.example.oompaloompashr.ui.workerlists.workerlist.WorkerListFragment"
+        android:label="WorkerListFragment" >
+        <action
+            android:id="@+id/action_workerListFragment_to_wrokerDetailFragment"
+            app:destination="@id/wrokerDetailFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/wrokerDetailFragment"
+        android:name="com.example.oompaloompashr.ui.workerlists.workerDetail.WorkerDetailFragment"
+        android:label="WrokerDetailFragment" >
+        <argument
+            android:name="arg"
+            app:argType="long" />
+    </fragment>
+</navigation>
